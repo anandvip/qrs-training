@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PEMF Therapy Training</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 20px;
+            background-color: #f4f4f4;
+        }
+        .container {
+            max-width: 800px;
+            margin: auto;
+            background: white;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        h1, h2 {
+            color: #333;
+        }
+        .section {
+            margin-bottom: 20px;
+            border-bottom: 1px solid #eee;
+            padding-bottom: 20px;
+        }
+        .example {
+            background-color: #e6f3ff;
+            padding: 10px;
+            border-radius: 5px;
+            margin-top: 10px;
+        }
+        .term {
+            cursor: pointer;
+            color: #0066cc;
+            text-decoration: underline;
+        }
+        #termDefinition {
+            display: none;
+            background-color: #fff9e6;
+            padding: 10px;
+            border-radius: 5px;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>PEMF Therapy Training Guide</h1>
+
+        <div class="section">
+            <h2>What is PEMF Therapy?</h2>
+            <p>PEMF (Pulsed Electromagnetic Field) therapy is a non-invasive treatment that uses electromagnetic fields to stimulate cellular repair and improve overall health.</p>
+            <div class="example">
+                <strong>Example:</strong> Just as a battery recharges a phone, PEMF therapy "recharges" human cells.
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>How PEMF Works</h2>
+            <p>PEMF therapy works by generating pulsed electromagnetic fields that penetrate the body, stimulating cellular metabolism, improving circulation, and enhancing the body's natural healing processes.</p>
+            <div class="example">
+                <strong>Example:</strong> In a study at Johns Hopkins, researchers found a 38% increase in ATP (cellular energy) production in cells exposed to magnetic fields.
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>Key Benefits of PEMF</h2>
+            <ul>
+                <li>Pain relief</li>
+                <li>Reduced inflammation</li>
+                <li>Improved bone healing</li>
+                <li>Enhanced mental health</li>
+                <li>Better sleep</li>
+                <li>Faster wound healing</li>
+                <li>Improved cardiovascular health</li>
+            </ul>
+            <div class="example">
+                <strong>Example:</strong> A study on breast cancer patients showed PEMF therapy reduced post-surgical pain by nearly three times compared to a placebo group.
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>PEMF and Cellular Health</h2>
+            <p>PEMF therapy improves cellular health by:</p>
+            <ul>
+                <li>Increasing ATP production</li>
+                <li>Enhancing cellular membrane potential</li>
+                <li>Improving oxygen utilization</li>
+                <li>Facilitating detoxification</li>
+            </ul>
+            <div class="example">
+                <strong>Example:</strong> Healthy cells have a voltage of -70 to -80 mV. Chronic disease can drop this to -40 mV. PEMF helps restore optimal cellular voltage.
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>PEMF Safety and FDA Approval</h2>
+            <p>PEMF therapy is FDA approved for certain applications like bone healing and depression treatment. It's generally considered safe with minimal side effects.</p>
+            <div class="example">
+                <strong>Example:</strong> NASA has used PEMF therapy to prevent bone and muscle loss in astronauts, demonstrating its safety and efficacy.
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>Technical Terms</h2>
+            <p>Click on a term to see its definition:</p>
+            <p><span class="term" onclick="showDefinition('ATP')">ATP</span> | <span class="term" onclick="showDefinition('TMP')">TMP</span> | <span class="term" onclick="showDefinition('Electroporation')">Electroporation</span></p>
+            <div id="termDefinition"></div>
+        </div>
+    </div>
+
+    <script>
+        function showDefinition(term) {
+            const definitions = {
+                'ATP': 'Adenosine Triphosphate - the primary energy carrier in cells. PEMF increases ATP production, boosting cellular energy.',
+                'TMP': 'Transmembrane Potential - the voltage difference across a cell membrane. PEMF helps restore optimal TMP, improving cellular function.',
+                'Electroporation': 'The creation of temporary pores in cell membranes. PEMF induces gentle electroporation, enhancing nutrient uptake and waste removal.'
+            };
+            const definitionElement = document.getElementById('termDefinition');
+            definitionElement.innerHTML = `<strong>${term}:</strong> ${definitions[term]}`;
+            definitionElement.style.display = 'block';
+        }
+    </script>
+</body>
+</html>
